@@ -7,7 +7,7 @@
 -->
 
 ## Step 1: Add a test workflow
-_underscore_
+
 _Welcome to "GitHub Actions: Continuous Integration"! :wave:_
 
 **What is _continuous integration_?**: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The quality results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
@@ -36,7 +36,7 @@ First, let's add a workflow to *lint* (clean, like a lint roller) our Markdown f
    - name: Run markdown lint
      run: |
        npm install remark-cli remark-preset-lint-consistent
-       npx remark . --use remark-preset-lint-consistent --frail
+       npm remark . use remark-preset-lint-consistent --frail
    ```
    > Even after the code is indented properly in `ci.yml`, you will see a build error in GitHub Actions. We'll fix this in the next step.
 1. Click **Commit changes...**, and choose to make a new branch named `ci`.
